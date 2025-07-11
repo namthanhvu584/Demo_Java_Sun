@@ -1,4 +1,4 @@
-package JV1;
+package JavaCore_Sun;
 
 import java.util.Scanner;
 
@@ -24,22 +24,24 @@ public class Slide2 {
         System.out.println("x || y: " + (x || y));     // true
         System.out.println("!x: " + (!x));             // false
 
-        // 3. SO SÁNH CHUỖI
-        String s1 = "hello";
-        String s2 = "hello";
-        String s3 = new String("hello");
-        System.out.println("s1 == s2: " + (s1 == s2));     // true (cùng vùng nhớ)
-        System.out.println("s1 == s3: " + (s1 == s3));     // false (khác vùng nhớ)
-        System.out.println("s1.equals(s3): " + s1.equals(s3)); // true (so nội dung)
+        //3. So sanh chuoi
+        String s1 = "hi nam";
+        String s2 = "hi nam";
+        String s3 = new String("hi nam");
+        System.out.println("s1 = s2: " + (s1 == s2));    //true
+        System.out.println("s1 = s3: " + (s1 == s3));    //false
+        System.out.println("s1.equals(s3): " + s1.equals(s3));   //true
 
         // 4. CÂU LỆNH IF ELSE
-        int score = 85;
-        if (score >= 90) {
-            System.out.println("Hạng A");
-        } else if (score >= 80) {
-            System.out.println("Hạng B");
+        double gpa = 3.19;
+        if(gpa >= 3.6){
+            System.out.println("Bằng xuat sac");
+        }else if(gpa >= 3.2){
+            System.out.println("Bang gioi");
+        } else if (gpa >= 2.5) {
+            System.out.println("Bang kha");
         } else {
-            System.out.println("Hạng C hoặc thấp hơn");
+            System.out.println("Bang trung binh");
         }
 
         // 5. SWITCH CASE CÓ NHẬP DỮ LIỆU
@@ -90,17 +92,7 @@ public class Slide2 {
             j++;
         }
 
-        // Ví dụ 1: Tìm số đầu tiên chia hết cho 7 và lớn hơn 20
-        int x1 = 21;
-        while (true) {
-            if (x1 % 7 == 0) {
-                System.out.println("Số đầu tiên chia hết cho 7 và > 20 là: " + x1);
-                break;
-            }
-            x1++;
-        }
-
-        // Ví dụ 2: Nhập mật khẩu đúng mới cho tiếp tục
+        // Ví dụ 1: Nhập mật khẩu đúng mới cho tiếp tục
         String password;
         do {
             System.out.print("Nhập mật khẩu: ");
@@ -122,6 +114,7 @@ public class Slide2 {
             username = scanner.next();
         } while (!username.equals("admin"));
         System.out.println("Xin chào admin!");
+
 
         // 9. BREAK, CONTINUE, RETURN
         for (int n = 1; n <= 5; n++) {
