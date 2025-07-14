@@ -1,4 +1,4 @@
-// 📁 Slide8 - Tổng hợp ví dụ về Xử lý ngoại lệ (Exception Handling) trong Java
+
 package JavaCore_Sun.Slide8;
 
 import java.io.*;
@@ -34,7 +34,7 @@ public class DemoException {
         try {
             kiemTraTuoi(15); // Tuổi nhỏ hơn 18 sẽ ném lỗi
         } catch (IllegalArgumentException e) {
-            System.out.println("❌ Tuổi không hợp lệ: " + e.getMessage());
+            System.out.println(" Tuổi không hợp lệ: " + e.getMessage());
         }
 
         //  throws – khai báo lỗi có thể xảy ra
@@ -64,7 +64,7 @@ public class DemoException {
         try {
             dangKy("", 17); // thiếu tên hoặc tuổi nhỏ sẽ gây lỗi
         } catch (InvalidInputException e) {
-            System.out.println("❗ Ngoại lệ tự định nghĩa: " + e.getMessage());
+            System.out.println(" Ngoại lệ tự định nghĩa: " + e.getMessage());
         }
     }
 
